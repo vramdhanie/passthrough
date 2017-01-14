@@ -10,16 +10,18 @@ Clone this repository and run
 
 to install dependencies.
 
-Then set your brewerydb API key and run
+Then set your brewerydb API key in the config.js file and run
 
-`node app`
+`npm start`
 
-By default the server starts on port 8088.
+By default the server starts on port 3000.
 
 ##Endpoints
-###/beer
-This endpoint maps to ...
+###/beers
+This endpoint maps to /search on the BreweryDB API. It accepts a query  q
+which is the search term and returns the response from the API. 
 
-###/search
-This endpoint maps to ...
+To test this API use postman or otherwise and call:
+
+`http://localhost:3000/beers?q=coors`
 
